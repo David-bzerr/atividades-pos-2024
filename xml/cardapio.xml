@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
 <cardapio>
     <pratos id="p1">
         <nome>pizza doce</nome>
         <descricao>E doce</descricao>
-        <ingredientes>chocolate</ingredientes>
+        <ingredientes>
+            <ingrediente>chocolate</ingrediente>
+            <ingrediente>tomate</ingrediente>
+        </ingredientes>
         <preco>45</preco>
         <calorias>500</calorias>
         <tempo>10 min</tempo>
@@ -11,7 +15,10 @@
     <pratos id="p2">
         <nome>pizza sertaneja</nome>
         <descricao>Tradicional</descricao>
-        <ingredientes>Carne</ingredientes>
+        <ingredientes>
+            <ingrediente>carne</ingrediente>
+            <ingrediente>tomate</ingrediente>
+        </ingredientes>
         <preco>45</preco>
         <calorias>700</calorias>
         <tempo>15 min</tempo>
@@ -19,7 +26,10 @@
     <pratos id="p3">
         <nome>pizza muçarela</nome>
         <descricao>Feito de queijo</descricao>
-        <ingredientes>queijo</ingredientes>
+        <ingredientes>
+            <ingrediente>carne</ingrediente>
+            <ingrediente>tomate</ingrediente>
+        </ingredientes>
         <preco>50</preco>
         <calorias>600</calorias>
         <tempo>15 min</tempo>
@@ -27,7 +37,10 @@
     <pratos id="p4">
         <nome>pizza carne de sol</nome>
         <descricao>E doce</descricao>
-        <ingredientes>Carne de sol</ingredientes>
+        <ingredientes>
+            <ingrediente>carne</ingrediente>
+            <ingrediente>tomate</ingrediente>
+        </ingredientes>
         <preco>45</preco>
         <calorias>800</calorias>
         <tempo>10 min</tempo>
@@ -35,7 +48,10 @@
     <pratos id="p5">
         <nome>pizza sem recheio</nome>
         <descricao>Apenas a massa</descricao>
-        <ingredientes>massa</ingredientes>
+        <ingredientes>
+            <ingrediente>catupiry</ingrediente>
+            <ingrediente>massa</ingrediente>
+        </ingredientes>
         <preco>25</preco>
         <calorias>200</calorias>
         <tempo>5 min</tempo>
