@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE imobiliaria [
+<!ELEMENT imobiliaria (imovel+)>
+<!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+<!ELEMENT descricao (#PCDATA)>
+<!ELEMENT proprietario (nome, (email+ | telefone+)*)>
+<!ELEMENT endereco (rua, bairro, cidade, numero?)>
+<!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT valor (#PCDATA)>
+<!ELEMENT tamanho (#PCDATA)>
+<!ELEMENT numQuartos (#PCDATA)>
+<!ELEMENT numBanheiros (#PCDATA)>
+<!ATTLIST imovel id ID #REQUIRED>
+
+]>
+
+
+
+<imobiliaria>
+    <imovel id="i1">
+        <descricao>boa</descricao>
+        <proprietario>
+            <nome>izac</nome>
+            <email>izac.nasc</email>
+            <telefone>(84)99999-9999</telefone>
+            <telefone>(84)99999-9999</telefone>
+        </proprietario>
+        <endereco>
+            <rua>aquela</rua>
+            <bairro>qualquer</bairro>
+            <cidade>essaessa</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>1</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiro>1</numBanheiro>
+        </caracteristicas>
+
+        <valor>01</valor>
+
+    </imovel>
+    <imovel id="i2">
+        <descricao>boa</descricao>
+        <proprietario>
+            <nome>fabio</nome>
+            <email>fabio.gutem</email>
+            <telefone>(84)99999-9999</telefone>
+            <telefone>(84)99999-9999</telefone>ario>
+        <endereco>
+        </propriet
+            <rua>aquela</rua>
+            <bairro>essa</bairro>
+            <cidade>qualquer</cidade>
+            <numero>04</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>3</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiro>1</numBanheiro>
+        </caracteristicas>
+
+        <valor>20</valor>
+
+    </imovel>
+    <imovel id="i3">
+        <descricao>boa</descricao>
+        <proprietario>
+            <nome>gui</nome>
+            <email>guilherme.g</email>
+            <telefone>(84)99999-9999</telefone>
+            <telefone>(84)99999-9999</telefone>
+        </proprietario>
+        <endereco>
+            <rua>essa</rua>
+            <bairro>qualquer</bairro>
+            <cidade>aquela</cidade>
+            <numero>03</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>4</tamanho>
+            <numQuartos>6</numQuartos>
+            <numBanheiro>2</numBanheiro>
+        </caracteristicas>
+
+        <valor>3000</valor>
+
+    </imovel>
+    <imovel id="i4">
+        <descricao>boa</descricao>
+        <proprietario>
+            <nome>allyk</nome>
+            <email>allyk.gay</email>
+            <telefone>(84)99999-9999</telefone>
+            <telefone>(84)99999-9999</telefone>
+        </proprietario>
+        <endereco>
+            <rua>essa</rua>
+            <bairro>aquela</bairro>
+            <cidade>toda</cidade>
+            <numero>02</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>1</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiro>1</numBanheiro>
+        </caracteristicas>
+
+        <valor>200000</valor>
+
+    </imovel>
+    <imovel id="i5">
+        <descricao>boa</descricao>
+        <proprietario>
+            <nome>poli</nome>
+            <email>poli.PP</email>
+            <telefone>(84)99999-9999</telefone>
+            <telefone>(84)99999-9999</telefone>
+        </proprietario>
+        <endereco>
+            <rua>aquela</rua>
+            <bairro>essa</bairro>
+            <cidade>qualquer</cidade>
+            <numero>01</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>2</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiro>2</numBanheiro>
+        </caracteristicas>
+
+        <valor>10000000</valor>
+
+    </imovel>
+</imobiliaria>
