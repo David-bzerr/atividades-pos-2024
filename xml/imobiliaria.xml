@@ -6,6 +6,7 @@
 <!ELEMENT proprietario (nome, (email+ | telefone+)*)>
 <!ELEMENT endereco (rua, bairro, cidade, numero?)>
 <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+<!ELEMENT valor (#PCDATA)>
 <!ELEMENT nome (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT telefone (#PCDATA)>
@@ -13,7 +14,6 @@
 <!ELEMENT bairro (#PCDATA)>
 <!ELEMENT cidade (#PCDATA)>
 <!ELEMENT numero (#PCDATA)>
-<!ELEMENT valor (#PCDATA)>
 <!ELEMENT tamanho (#PCDATA)>
 <!ELEMENT numQuartos (#PCDATA)>
 <!ELEMENT numBanheiros (#PCDATA)>
@@ -40,7 +40,7 @@
         <caracteristicas>
             <tamanho>1</tamanho>
             <numQuartos>2</numQuartos>
-            <numBanheiro>1</numBanheiro>
+            <numBanheiros>1</numBanheiros>
         </caracteristicas>
 
         <valor>01</valor>
@@ -52,9 +52,9 @@
             <nome>fabio</nome>
             <email>fabio.gutem</email>
             <telefone>(84)99999-9999</telefone>
-            <telefone>(84)99999-9999</telefone>ario>
+            <telefone>(84)99999-9999</telefone>
+        </proprietario>
         <endereco>
-        </propriet
             <rua>aquela</rua>
             <bairro>essa</bairro>
             <cidade>qualquer</cidade>
@@ -63,7 +63,7 @@
         <caracteristicas>
             <tamanho>3</tamanho>
             <numQuartos>3</numQuartos>
-            <numBanheiro>1</numBanheiro>
+            <numBanheiros>1</numBanheiros>
         </caracteristicas>
 
         <valor>20</valor>
@@ -86,7 +86,7 @@
         <caracteristicas>
             <tamanho>4</tamanho>
             <numQuartos>6</numQuartos>
-            <numBanheiro>2</numBanheiro>
+            <numBanheiros>2</numBanheiros>
         </caracteristicas>
 
         <valor>3000</valor>
@@ -109,7 +109,7 @@
         <caracteristicas>
             <tamanho>1</tamanho>
             <numQuartos>1</numQuartos>
-            <numBanheiro>1</numBanheiro>
+            <numBanheiros>1</numBanheiros>
         </caracteristicas>
 
         <valor>200000</valor>
@@ -132,7 +132,7 @@
         <caracteristicas>
             <tamanho>2</tamanho>
             <numQuartos>2</numQuartos>
-            <numBanheiro>2</numBanheiro>
+            <numBanheiros>2</numBanheiros>
         </caracteristicas>
 
         <valor>10000000</valor>
