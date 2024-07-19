@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+<quiz versao="1.0">
+    <disciplina>Física</disciplina>
+    <professor>
+        <nome>Pinheiro</nome>
+        <matrícula>12345</matrícula>
+    </professor>
+    <turma>Turma A</turma>
+    <data>2024-07-19</data>
+    <questões>
+        <questão>
+            <enunciado>Qual é a raiz quadrada de 16?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="sim">4</alternativa>
+                <alternativa correta="nao">3</alternativa>
+                <alternativa correta="nao">5</alternativa>
+                <alternativa correta="nao">6</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>qual ano termina a fisica classica?</enunciado>
+            <pontuação>3</pontuação>
+            <alternativas>
+                <alternativa correta="sim">1900</alternativa>
+                <alternativa correta="nao">1800</alternativa>
+                <alternativa correta="nao">1700</alternativa>
+                <alternativa correta="nao">2000</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é o número de Euler?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">2.71828</alternativa>
+                <alternativa correta="nao">3.14159</alternativa>
+                <alternativa correta="nao">1.61803</alternativa>
+                <alternativa correta="nao">1.41421</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Quem descobriu a gravidade?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="sim">Isaac Newton</alternativa>
+                <alternativa correta="nao">Albert Einstein</alternativa>
+                <alternativa correta="nao">Galileu Galilei</alternativa>
+                <alternativa correta="nao">Nikola Tesla</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>O que ocorreria com a Terra caso o Sol fosse substituído por um buraco negro de mesma massa?</enunciado>
+            <pontuação>4</pontuação>
+            <alternativas>
+                <alternativa correta="sim">A Terra seria engolida pelo buraco negro devido à sua influência gravitacional muito maior.</alternativa>
+                <alternativa correta="nao">A Terra continuaria a orbitar normalmente em torno do buraco negro.</alternativa>
+                <alternativa correta="nao">A Terra seria catapultada para longe do sistema solar.</alternativa>
+                <alternativa correta="nao">Nada mudaria na órbita da Terra.</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Quantos lados tem um quadrado?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">4</alternativa>
+                <alternativa correta="nao">3</alternativa>
+                <alternativa correta="nao">5</alternativa>
+                <alternativa correta="nao">6</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>
