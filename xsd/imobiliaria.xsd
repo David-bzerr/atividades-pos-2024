@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://imobiliaria.org"
+        xmlns:tns="http://imobiliaria.org"
+        elementFormDefault="qualified">
+
+
+  <element name="imobiliaria">
+    <complexType>
+      <sequence>
+        <element name="imovel" maxOccurs="unbounded">
+          <complexType>
+            <sequence>
+
+              <element name="descricao" type="xs:string"/>
+
+
+              <element name="proprietario">
+                <complexType>
+                  <sequence>
+                    <element name="nome" type="xs:string"/>
+                    <element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="telefone" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                  </sequence>
+                </complexType>
+              </element>
+
+
+              <element name="endereco">
+                <complexType>
+                  <sequence>
+                    <element name="rua" type="xs:string"/>
+                    <element name="bairro" type="xs:string"/>
+                    <element name="cidade" type="xs:string"/>
+                    <element name="numero" type="xs:string" minOccurs="0"/>
+                  </sequence>
+                </complexType>
+              </element>
+
+
+              <element name="caracteristicas">
+                <complexType>
+                  <sequence>
+                    <element name="tamanho" type="xs:decimal"/>
+                    <element name="numQuartos" type="xs:integer"/>
+                    <element name="numBanheiros" type="xs:integer"/>
+                  </sequence>
+                </complexType>
+              </element>
+
+
+              <element name="valor" type="xs:decimal"/>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+
+</schema>
