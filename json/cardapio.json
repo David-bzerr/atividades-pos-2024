@@ -1,0 +1,76 @@
+{
+    "cardapio": {
+      "prato": [
+        {
+          "id": "1",
+          "nome": "pizza doce",
+          "descricao": "E doce",
+          "ingredientes": {
+            "ingrediente": [
+              "chocolate",
+              "tomate"
+            ]
+          },
+          "preco": 45,
+          "calorias": 500,
+          "tempoPreparo": "10 min"
+        },
+        {
+          "id": "2",
+          "nome": "pizza sertaneja",
+          "descricao": "Tradicional",
+          "ingredientes": {
+            "ingrediente": [
+              "carne",
+              "tomate"
+            ]
+          },
+          "preco": 45,
+          "calorias": 700,
+          "tempoPreparo": "15 min"
+        },
+        {
+          "id": "3",
+          "nome": "pizza muçarela",
+          "descricao": "Feito de queijo",
+          "ingredientes": {
+            "ingrediente": [
+              "carne",
+              "tomate"
+            ]
+          },
+          "preco": 50,
+          "calorias": 600,
+          "tempoPreparo": "15 min"
+        },
+        {
+          "id": "4",
+          "nome": "pizza carne de sol",
+          "descricao": "E doce",
+          "ingredientes": {
+            "ingrediente": [
+              "carne",
+              "tomate"
+            ]
+          },
+          "preco": 45,
+          "calorias": 800,
+          "tempoPreparo": "10 min"
+        },
+        {
+          "id": "5",
+          "nome": "pizza sem recheio",
+          "descricao": "Apenas a massa",
+          "ingredientes": {
+            "ingrediente": [
+              "catupiry",
+              "massa"
+            ]
+          },
+          "preco": 25,
+          "calorias": 200,
+          "tempoPreparo": "5 min"
+        }
+      ]
+    }
+  }

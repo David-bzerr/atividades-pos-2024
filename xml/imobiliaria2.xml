@@ -1,121 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Raiz do documento XML, representando uma imobiliária -->
 <imobiliaria xmlns="http://imobiliaria.org"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://imobiliaria.org imobiliaria.xsd">
 
-             
-    <imovel id="i1">
-        <descricao>boa</descricao>
+    <!-- Início da definição de um imóvel, identificado por um ID único -->
+    <imovel id="1">
+        <!-- Descrição do imóvel, fornecendo informações gerais sobre suas características -->
+        <descricao>Apartamento compacto de 2 quartos, 1 banheiro, localizado no bairro Central, ideal para quem busca conforto em um espaço otimizado.</descricao>
+        
+        <!-- Informações sobre o proprietário do imóvel -->
         <proprietario>
-            <nome>izac</nome>
-            <email>izac.nasc</email>
-            <telefone>(84)99999-9999</telefone>
-            <telefone>(84)99999-9999</telefone>
+            <nome>Izac</nome> <!-- Nome do proprietário -->
+            <email>izac.nasc@example.com</email> <!-- Email do proprietário -->
+            <telefone>(84) 99999-9999</telefone> <!-- Primeiro telefone de contato do proprietário -->
+            <telefone>(84) 99999-8888</telefone> <!-- Segundo telefone de contato do proprietário -->
         </proprietario>
+        
+        <!-- Endereço do imóvel -->
         <endereco>
-            <rua>aquela</rua>
-            <bairro>qualquer</bairro>
-            <cidade>essaessa</cidade>
+            <rua>Rua das Flores</rua> <!-- Rua onde o imóvel está localizado -->
+            <bairro>Central</bairro> <!-- Bairro onde o imóvel está localizado -->
+            <cidade>São Paulo</cidade> <!-- Cidade onde o imóvel está localizado -->
+            <numero>101</numero> <!-- Número do imóvel na rua -->
         </endereco>
+        
+        <!-- Características do imóvel -->
         <caracteristicas>
-            <tamanho>1</tamanho>
-            <numQuartos>2</numQuartos>
-            <numBanheiros>1</numBanheiros>
+            <tamanho>50</tamanho> <!-- Tamanho do imóvel em metros quadrados -->
+            <numQuartos>2</numQuartos> <!-- Número de quartos no imóvel -->
+            <numBanheiros>1</numBanheiros> <!-- Número de banheiros no imóvel -->
         </caracteristicas>
-
-        <valor>01</valor>
-
+        
+        <!-- Valor do imóvel em uma determinada unidade monetária (ex.: R$) -->
+        <valor>350000</valor>
     </imovel>
-    <imovel id="i2">
-        <descricao>boa</descricao>
+
+    <!-- Definição do segundo imóvel, similar à primeira -->
+    <imovel id="2">
+        <descricao>Casa espaçosa de 3 quartos, localizada no bairro Jardim Europa, com amplo espaço interno e ótimo acesso à cidade.</descricao>
         <proprietario>
-            <nome>fabio</nome>
-            <email>fabio.gutem</email>
-            <telefone>(84)99999-9999</telefone>
-            <telefone>(84)99999-9999</telefone>
+            <nome>Fabio</nome>
+            <email>fabio.gutem@example.com</email>
+            <telefone>(84) 99999-7777</telefone>
+            <telefone>(84) 99999-6666</telefone>
         </proprietario>
         <endereco>
-            <rua>aquela</rua>
-            <bairro>essa</bairro>
-            <cidade>qualquer</cidade>
-            <numero>04</numero>
+            <rua>Avenida Paulista</rua>
+            <bairro>Jardim Europa</bairro>
+            <cidade>São Paulo</cidade>
+            <numero>450</numero>
         </endereco>
         <caracteristicas>
-            <tamanho>3</tamanho>
+            <tamanho>200</tamanho>
             <numQuartos>3</numQuartos>
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
-
-        <valor>20</valor>
-
+        <valor>1200000</valor>
     </imovel>
-    <imovel id="i3">
-        <descricao>boa</descricao>
+
+    <!-- Definição do terceiro imóvel -->
+    <imovel id="3">
+        <descricao>Residência de luxo com 6 quartos e 2 banheiros, situada no bairro Morumbi, perfeita para famílias grandes que buscam espaço e conforto.</descricao>
         <proprietario>
-            <nome>gui</nome>
-            <email>guilherme.g</email>
-            <telefone>(84)99999-9999</telefone>
-            <telefone>(84)99999-9999</telefone>
+            <nome>Gui</nome>
+            <email>guilherme.g@example.com</email>
+            <telefone>(84) 99999-5555</telefone>
+            <telefone>(84) 99999-4444</telefone>
         </proprietario>
         <endereco>
-            <rua>essa</rua>
-            <bairro>qualquer</bairro>
-            <cidade>aquela</cidade>
-            <numero>03</numero>
+            <rua>Alameda Santos</rua>
+            <bairro>Morumbi</bairro>
+            <cidade>São Paulo</cidade>
+            <numero>300</numero>
         </endereco>
         <caracteristicas>
-            <tamanho>4</tamanho>
+            <tamanho>450</tamanho>
             <numQuartos>6</numQuartos>
             <numBanheiros>2</numBanheiros>
         </caracteristicas>
-
-        <valor>3000</valor>
-
+        <valor>3500000</valor>
     </imovel>
-    <imovel id="i4">
-        <descricao>boa</descricao>
+
+    <!-- Definição do quarto imóvel -->
+    <imovel id="4">
+        <descricao>Imóvel compacto de 1 quarto e 1 banheiro, localizado no bairro Vila Madalena, ideal para solteiros ou casais que buscam um ambiente aconchegante.</descricao>
         <proprietario>
-            <nome>allyk</nome>
-            <email>allyk.gay</email>
-            <telefone>(84)99999-9999</telefone>
-            <telefone>(84)99999-9999</telefone>
+            <nome>Allyk</nome>
+            <email>allyk.gay@example.com</email>
+            <telefone>(84) 99999-3333</telefone>
+            <telefone>(84) 99999-2222</telefone>
         </proprietario>
         <endereco>
-            <rua>essa</rua>
-            <bairro>aquela</bairro>
-            <cidade>toda</cidade>
-            <numero>02</numero>
+            <rua>Rua Harmonia</rua>
+            <bairro>Vila Madalena</bairro>
+            <cidade>São Paulo</cidade>
+            <numero>80</numero>
         </endereco>
         <caracteristicas>
-            <tamanho>1</tamanho>
+            <tamanho>60</tamanho>
             <numQuartos>1</numQuartos>
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
-
-        <valor>200000</valor>
-
+        <valor>450000</valor>
     </imovel>
-    <imovel id="i5">
-        <descricao>boa</descricao>
+
+    <!-- Definição do quinto imóvel -->
+    <imovel id="5">
+        <descricao>Imóvel de alto padrão com 2 quartos e 2 banheiros, situado no bairro Itaim Bibi, uma oportunidade única para quem busca sofisticação e localização privilegiada.</descricao>
         <proprietario>
-            <nome>poli</nome>
-            <email>poli.PP</email>
-            <telefone>(84)99999-9999</telefone>
-            <telefone>(84)99999-9999</telefone>
+            <nome>Poli</nome>
+            <email>poli.pp@example.com</email>
+            <telefone>(84) 99999-1111</telefone>
+            <telefone>(84) 99999-0000</telefone>
         </proprietario>
         <endereco>
-            <rua>aquela</rua>
-            <bairro>essa</bairro>
-            <cidade>qualquer</cidade>
-            <numero>01</numero>
+            <rua>Rua Tabapuã</rua>
+            <bairro>Itaim Bibi</bairro>
+            <cidade>São Paulo</cidade>
+            <numero>900</numero>
         </endereco>
         <caracteristicas>
-            <tamanho>2</tamanho>
+            <tamanho>120</tamanho>
             <numQuartos>2</numQuartos>
             <numBanheiros>2</numBanheiros>
         </caracteristicas>
-
-        <valor>10000000</valor>
-
+        <valor>2100000</valor>
     </imovel>
+
 </imobiliaria>

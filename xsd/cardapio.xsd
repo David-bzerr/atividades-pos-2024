@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Definição do namespace e configuração do schema -->
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         xmlns:b="http://cardapio.org"
         targetNamespace="http://cardapio.org"
         elementFormDefault="qualified">
 
-
+  <!-- Definição do elemento raiz "cardapio", que conterá todos os pratos -->
   <element name="cardapio">
     <complexType>
       <sequence>
+        
+        <!-- Definição do elemento "prato", que pode ocorrer múltiplas vezes dentro de "cardapio" -->
         <element name="prato" maxOccurs="unbounded">
           <complexType>
             <sequence>
 
-
+              <!-- Elemento "nome" para o nome do prato, de tipo string -->
               <element name="nome" type="string"/>
+              
+              <!-- Elemento "descricao" para a descrição do prato, de tipo string -->
               <element name="descricao" type="string"/>
 
+              <!-- Elemento "ingredientes", que contém uma lista de ingredientes -->
               <element name="ingredientes">
                 <complexType>
                   <sequence>
+                    
+                    <!-- Elemento "ingrediente", que pode ocorrer múltiplas vezes dentro de "ingredientes" -->
                     <element name="ingrediente" type="string" maxOccurs="unbounded"/>
                   </sequence>
                 </complexType>
               </element>
 
+              <!-- Elemento "preco" para o preço do prato, de tipo decimal -->
               <element name="preco" type="decimal"/>
+              
+              <!-- Elemento "calorias" para as calorias do prato, de tipo integer -->
               <element name="calorias" type="integer"/>
+              
+              <!-- Elemento "tempoPreparo" para o tempo de preparo do prato, de tipo string -->
               <element name="tempoPreparo" type="string"/>
 
-
             </sequence>
+            
+            <!-- Atributo "id" do elemento "prato", que é obrigatório e de tipo integer -->
             <attribute name="id" type="integer" use="required"/>
           </complexType>
         </element>

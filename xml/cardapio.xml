@@ -4,7 +4,7 @@
           xsi:schemaLocation="http://cardapio.org cardapio.xsd">
 
 
-    <prato id="i1">
+    <prato id="1">
         <nome>pizza doce</nome>
         <descricao>E doce</descricao>
         <ingredientes>
@@ -16,7 +16,7 @@
         <tempoPreparo>10 min</tempoPreparo>
     </prato>
 
-    <prato id="i2">
+    <prato id="2">
         <nome>pizza sertaneja</nome>
         <descricao>Tradicional</descricao>
         <ingredientes>
@@ -28,7 +28,7 @@
         <tempoPreparo>15 min</tempoPreparo>
     </prato>
 
-    <prato id="i3">
+    <prato id="3">
         <nome>pizza muçarela</nome>
         <descricao>Feito de queijo</descricao>
         <ingredientes>
@@ -40,7 +40,7 @@
         <tempoPreparo>15 min</tempoPreparo>
     </prato>
 
-    <prato id="i4">
+    <prato id="4">
         <nome>pizza carne de sol</nome>
         <descricao>E doce</descricao>
         <ingredientes>
@@ -52,7 +52,7 @@
         <tempoPreparo>10 min</tempoPreparo>
     </prato>
 
-    <prato id="i5">
+    <prato id="5">
         <nome>pizza sem recheio</nome>
         <descricao>Apenas a massa</descricao>
         <ingredientes>

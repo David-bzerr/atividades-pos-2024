@@ -1,0 +1,162 @@
+
+{
+    "quiz": {
+      "versao": "1.0",
+      "disciplina": "Física",
+      "professor": {
+        "nome": "Pinheiro",
+        "matrícula": "12345"
+      },
+      "turma": "Turma A",
+      "data": "2024-07-19",
+      "questões": {
+        "questão": [
+          {
+            "enunciado": "Qual é a raiz quadrada de 16?",
+            "pontuação": 2,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "4"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "3"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "5"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "6"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "qual ano termina a fisica classica?",
+            "pontuação": 3,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "1900"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "1800"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "1700"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "2000"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "Qual é o número de Euler?",
+            "pontuação": 1,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "2.71828"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "3.14159"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "1.61803"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "1.41421"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "Quem descobriu a gravidade?",
+            "pontuação": 2,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "Isaac Newton"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Albert Einstein"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Galileu Galilei"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Nikola Tesla"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "O que ocorreria com a Terra caso o Sol fosse substituído por um buraco negro de mesma massa?",
+            "pontuação": 4,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "A Terra seria engolida pelo buraco negro devido à sua influência gravitacional muito maior."
+                },
+                {
+                  "correta": "nao",
+                  "texto": "A Terra continuaria a orbitar normalmente em torno do buraco negro."
+                },
+                {
+                  "correta": "nao",
+                  "texto": "A Terra seria catapultada para longe do sistema solar."
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Nada mudaria na órbita da Terra."
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "Quantos lados tem um quadrado?",
+            "pontuação": 1,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "4"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "3"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "5"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "6"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  
