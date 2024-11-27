@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://quiz.org"
+        xmlns:tns="http://quiz.org"
+        elementFormDefault="qualified">
+
+  <!-- Definição do elemento raiz "quiz", que conterá todas as informações sobre o quiz -->
+  <xs:element name="quiz">
+    <xs:complexType>
+      <xs:sequence>
+
+        <!-- Elemento "disciplina" para especificar a disciplina do quiz, de tipo string -->
+        <xs:element name="disciplina" type="xs:string"/>
+        
+        <!-- Elemento "professor", que contém informações sobre o professor responsável pelo quiz -->
+        <xs:element name="professor">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <!-- Elemento "nome" para o nome do professor, de tipo string -->
+              <xs:element name="nome" type="xs:string"/>
+              
+              <!-- Elemento "matrícula" para a matrícula do professor, de tipo string -->
+              <!-- Este elemento pode ser omitido (minOccurs="0") -->
+              <xs:element name="matrícula" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Elemento "turma" para especificar a turma para a qual o quiz é destinado, de tipo string -->
+        <xs:element name="turma" type="xs:string"/>
+        
+        <!-- Elemento "data" para especificar a data do quiz, de tipo string -->
+        <xs:element name="data" type="xs:string"/>
+        
+        <!-- Elemento "questões", que conterá todas as questões do quiz -->
+        <xs:element name="questões">
+          <xs:complexType>
+            <xs:sequence>
+
+              <!-- Elemento "questão", que pode ocorrer múltiplas vezes dentro de "questões" -->
+              <xs:element name="questão" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    
+                    <!-- Elemento "enunciado" para o texto da questão, de tipo string -->
+                    <xs:element name="enunciado" type="xs:string"/>
+                    
+                    <!-- Elemento "pontuação" para a pontuação atribuída à questão, de tipo string -->
+                    <xs:element name="pontuação" type="xs:string"/>
+                    
+                    <!-- Elemento "alternativas", que contém as alternativas possíveis para a questão -->
+                    <xs:element name="alternativas">
+                      <xs:complexType>
+                        <xs:sequence>
+
+                          <!-- Elemento "alternativa", que pode ocorrer múltiplas vezes dentro de "alternativas" -->
+                          <xs:element name="alternativa" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                
+                                <!-- Conteúdo simples de tipo string com um atributo adicional "correta" -->
+                                <xs:extension base="xs:string">
+                                  
+                                  <!-- Atributo "correta" para indicar se a alternativa é correta -->
+                                  <!-- O atributo "correta" é obrigatório e usa um tipo personalizado -->
+                                  <xs:attribute name="correta" type="corretaType" use="required"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+
+      <!-- Atributo "versao" para especificar a versão do quiz, de tipo string -->
+      <!-- Este atributo é obrigatório (use="required") -->
+      <xs:attribute name="versao" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Tipo simples personalizado "corretaType" para o atributo 'correta' -->
+  <!-- Define que o atributo "correta" só pode ter os valores "sim" ou "nao" -->
+  <xs:simpleType name="corretaType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="sim"/>
+      <xs:enumeration value="nao"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,125 @@
+{
+    "imobiliaria": {
+      "imovel": [
+        {
+          "id": "1",
+          "descricao": "boa",
+          "proprietario": {
+            "nome": "izac",
+            "email": "izac.nasc",
+            "telefone": [
+              "(84)99999-9999",
+              "(84)99999-9999"
+            ]
+          },
+          "endereco": {
+            "rua": "aquela",
+            "bairro": "qualquer",
+            "cidade": "essaessa"
+          },
+          "caracteristicas": {
+            "tamanho": 1,
+            "numQuartos": 2,
+            "numBanheiros": 1
+          },
+          "valor": 1
+        },
+        {
+          "id": "2",
+          "descricao": "boa",
+          "proprietario": {
+            "nome": "fabio",
+            "email": "fabio.gutem",
+            "telefone": [
+              "(84)99999-9999",
+              "(84)99999-9999"
+            ]
+          },
+          "endereco": {
+            "rua": "aquela",
+            "bairro": "essa",
+            "cidade": "qualquer",
+            "numero": 4
+          },
+          "caracteristicas": {
+            "tamanho": 3,
+            "numQuartos": 3,
+            "numBanheiros": 1
+          },
+          "valor": 20
+        },
+        {
+          "id": "3",
+          "descricao": "boa",
+          "proprietario": {
+            "nome": "gui",
+            "email": "guilherme.g",
+            "telefone": [
+              "(84)99999-9999",
+              "(84)99999-9999"
+            ]
+          },
+          "endereco": {
+            "rua": "essa",
+            "bairro": "qualquer",
+            "cidade": "aquela",
+            "numero": 3
+          },
+          "caracteristicas": {
+            "tamanho": 4,
+            "numQuartos": 6,
+            "numBanheiros": 2
+          },
+          "valor": 3000
+        },
+        {
+          "id": "4",
+          "descricao": "boa",
+          "proprietario": {
+            "nome": "allyk",
+            "email": "allyk.gay",
+            "telefone": [
+              "(84)99999-9999",
+              "(84)99999-9999"
+            ]
+          },
+          "endereco": {
+            "rua": "essa",
+            "bairro": "aquela",
+            "cidade": "toda",
+            "numero": 2
+          },
+          "caracteristicas": {
+            "tamanho": 1,
+            "numQuartos": 1,
+            "numBanheiros": 1
+          },
+          "valor": 200000
+        },
+        {
+          "id": "5",
+          "descricao": "boa",
+          "proprietario": {
+            "nome": "poli",
+            "email": "poli.PP",
+            "telefone": [
+              "(84)99999-9999",
+              "(84)99999-9999"
+            ]
+          },
+          "endereco": {
+            "rua": "aquela",
+            "bairro": "essa",
+            "cidade": "qualquer",
+            "numero": 1
+          },
+          "caracteristicas": {
+            "tamanho": 2,
+            "numQuartos": 2,
+            "numBanheiros": 2
+          },
+          "valor": 10000000
+        }
+      ]
+    }
+  }

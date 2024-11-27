@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definição do namespace e configuração do schema -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://imobiliaria.org"
+        xmlns:tns="http://imobiliaria.org"
+        elementFormDefault="qualified">
+
+  <!-- Definição do elemento raiz "imobiliaria", que conterá todos os imóveis -->
+  <element name="imobiliaria">
+    <complexType>
+      <sequence>
+
+        <!-- Definição do elemento "imovel", que pode ocorrer múltiplas vezes dentro de "imobiliaria" -->
+        <element name="imovel" maxOccurs="unbounded">
+          <complexType>
+            <sequence>
+
+              <!-- Elemento "descricao" para a descrição do imóvel, de tipo string -->
+              <element name="descricao" type="xs:string"/>
+
+              <!-- Elemento "proprietario", que contém informações sobre o proprietário do imóvel -->
+              <element name="proprietario">
+                <complexType>
+                  <sequence>
+                    
+                    <!-- Elemento "nome" para o nome do proprietário, de tipo string -->
+                    <element name="nome" type="xs:string"/>
+                    
+                    <!-- Elemento "email" para o email do proprietário, de tipo string -->
+                    <!-- Este elemento pode ocorrer múltiplas vezes ou pode ser omitido (minOccurs="0") -->
+                    <element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    
+                    <!-- Elemento "telefone" para os telefones do proprietário, de tipo string -->
+                    <!-- Este elemento pode ocorrer múltiplas vezes ou pode ser omitido (minOccurs="0") -->
+                    <element name="telefone" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                  </sequence>
+                </complexType>
+              </element>
+
+              <!-- Elemento "endereco", que contém as informações de endereço do imóvel -->
+              <element name="endereco">
+                <complexType>
+                  <sequence>
+                    
+                    <!-- Elemento "rua" para o nome da rua, de tipo string -->
+                    <element name="rua" type="xs:string"/>
+                    
+                    <!-- Elemento "bairro" para o nome do bairro, de tipo string -->
+                    <element name="bairro" type="xs:string"/>
+                    
+                    <!-- Elemento "cidade" para o nome da cidade, de tipo string -->
+                    <element name="cidade" type="xs:string"/>
+                    
+                    <!-- Elemento "numero" para o número do imóvel, de tipo string -->
+                    <!-- Este elemento pode ser omitido (minOccurs="0") -->
+                    <element name="numero" type="xs:string" minOccurs="0"/>
+                  </sequence>
+                </complexType>
+              </element>
+
+              <!-- Elemento "caracteristicas", que contém as características do imóvel -->
+              <element name="caracteristicas">
+                <complexType>
+                  <sequence>
+                    
+                    <!-- Elemento "tamanho" para o tamanho do imóvel, de tipo decimal -->
+                    <element name="tamanho" type="xs:decimal"/>
+                    
+                    <!-- Elemento "numQuartos" para o número de quartos do imóvel, de tipo integer -->
+                    <element name="numQuartos" type="xs:integer"/>
+                    
+                    <!-- Elemento "numBanheiros" para o número de banheiros do imóvel, de tipo integer -->
+                    <element name="numBanheiros" type="xs:integer"/>
+                  </sequence>
+                </complexType>
+              </element>
+
+              <!-- Elemento "valor" para o valor do imóvel, de tipo decimal -->
+              <element name="valor" type="xs:decimal"/>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+
+</schema>
